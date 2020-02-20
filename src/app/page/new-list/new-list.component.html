@@ -1,0 +1,13 @@
+<div class="centered-content">
+    <div class="model-box">
+      <h1 class="title">
+          Create a New List
+      </h1> 
+      <input name="title" [(ngModel)]="obj.title" class="input has-background-light is-small" type="text" placeholder="Find a repository">
+      <br><br>
+      <div class="buttons is-right">
+        <button class="button is-primary is-small has-text-white" [routerLink]="['/list']" routerLinkActive="router-link-active" >Cancel</button>
+        <button class="button is-primary is-small has-text-white" (click)="createList()">Create</button>
+      </div>
+    </div>
+</div>
